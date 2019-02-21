@@ -1,0 +1,6 @@
+/* line 1, ../sass/timer.scss */
+.timer .right-align span {
+  padding: 20px;
+  font-size: 2em;
+  background: #fff;
+}

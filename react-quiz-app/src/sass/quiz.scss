@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+html, body {
+    min-height: 100%;
+}
+
+.quiz {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    background: #222222;
+    font-family: 'Nunito', sans-serif;
+}
+
+.quiz .container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 3px;
+}
+
+@media (min-width: 769px) {
+    .quiz .container {
+        margin: 2.5rem auto;
+    }
+}
+
+.quiz .result {
+    padding: 1.5rem 2.5rem;
+}
+
+.quiz .answerOptions {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* QuestionCount Component */
+.quiz .test-name, .quiz .question-count {
+    padding: 1.5rem 2.5rem;
+    font-size: 1.25em;
+    transition: all 0.3s;
+}
+
+.quiz .test-name span {
+    font-weight: 700;
+}
+
+/* Question Component */
+.quiz .question {
+    padding: 0.5rem 2.5rem 1.5rem 2.5rem;
+    font-size: 2em;
+}
+
+.quiz .marks-count {
+    padding: 0.5rem 2.5rem 1.5rem 2.5rem;
+    font-size: 1.25em;
+}
+
+.quiz .marks-count span {
+    font-weight: 700;
+}
+
+.quiz .test-name span {
+    font-weight: 700;
+}
+
+
+/* AnswerOption Component */
+.quiz .answerOption {
+    border-top: 1px solid #eee;
+}
+
+.quiz .answerOption:hover {
+    background-color: #eefbfe;
+}
+
+.quiz .radioCustomButton {
+    position: absolute;
+    width: auto;
+    opacity: 0;
+}
+
+.radioCustomButton,
+.radioCustomLabel {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.quiz .radioCustomLabel {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 1.5rem 2.5rem 1.5rem 6rem;
+    font-size: 1.35em;
+    line-height: 1.5;
+    color: #646464;
+}
+
+.radioCustomButton~ .radioCustomLabel:before {
+    position: absolute;
+    top: 20px;
+    left: 38px;
+    width: 28px;
+    height: 28px;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background: #fff;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.radioCustomButton:checked~ .radioCustomLabel:before {
+    content: '';
+    background: #8BC53F url(../svg/icon-check.svg) no-repeat;
+    background-size: 27px;
+    border-color: #8BC53F;
+}
+
+/* Animation */
+.quiz .fade-enter {
+    opacity: 0;
+}
+
+.quiz .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out 0.3s;
+}
+
+.quiz .fade-leave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+}
+
+.quiz .fade-leave.fade-leave-active {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.quiz .fade-appear {
+    opacity: 0;
+}
+
+.quiz .fade-appear.fade-appear-active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.App-img {
+    width: 50%;
+    margin: auto;
+}
+
+.next-prev-buttons a {
+    margin: 10px;
+}

@@ -1,0 +1,38 @@
+html,
+body {
+    min-height: 100%;
+}
+
+.admin-dash {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1541175784069-dc0e8299f520?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=293005fbcfdfda77cda455b258241bfe&auto=format&fit=crop&w=1350&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.select-wrapper input.select-dropdown {
+    display: none !important;
+}
+
+.select-wrapper .caret {
+    display: none !important;
+}
+
+select {
+    display: block;
+}
+
+.duration::-webkit-datetime-edit-ampm-field {
+    display: none;
+}
+
+input[type=time]::-webkit-clear-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    margin: -10px;
+}

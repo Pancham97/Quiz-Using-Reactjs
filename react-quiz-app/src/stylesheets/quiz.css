@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+/* line 3, ../sass/quiz.scss */
+html, body {
+  min-height: 100%;
+}
+
+/* line 7, ../sass/quiz.scss */
+.quiz {
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  background: #222222;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* line 15, ../sass/quiz.scss */
+.quiz .container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 3px;
+}
+
+@media (min-width: 769px) {
+  /* line 24, ../sass/quiz.scss */
+  .quiz .container {
+    margin: 2.5rem auto;
+  }
+}
+/* line 29, ../sass/quiz.scss */
+.quiz .result {
+  padding: 1.5rem 2.5rem;
+}
+
+/* line 33, ../sass/quiz.scss */
+.quiz .answerOptions {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* QuestionCount Component */
+/* line 40, ../sass/quiz.scss */
+.quiz .test-name, .quiz .question-count {
+  padding: 1.5rem 2.5rem;
+  font-size: 1.25em;
+  transition: all 0.3s;
+}
+
+/* line 46, ../sass/quiz.scss */
+.quiz .test-name span {
+  font-weight: 700;
+}
+
+/* Question Component */
+/* line 51, ../sass/quiz.scss */
+.quiz .question {
+  padding: 0.5rem 2.5rem 1.5rem 2.5rem;
+  font-size: 2em;
+}
+
+/* line 56, ../sass/quiz.scss */
+.quiz .marks-count {
+  padding: 0.5rem 2.5rem 1.5rem 2.5rem;
+  font-size: 1.25em;
+}
+
+/* line 61, ../sass/quiz.scss */
+.quiz .marks-count span {
+  font-weight: 700;
+}
+
+/* line 65, ../sass/quiz.scss */
+.quiz .test-name span {
+  font-weight: 700;
+}
+
+/* AnswerOption Component */
+/* line 71, ../sass/quiz.scss */
+.quiz .answerOption {
+  border-top: 1px solid #eee;
+}
+
+/* line 75, ../sass/quiz.scss */
+.quiz .answerOption:hover {
+  background-color: #eefbfe;
+}
+
+/* line 79, ../sass/quiz.scss */
+.quiz .radioCustomButton {
+  position: absolute;
+  width: auto;
+  opacity: 0;
+}
+
+/* line 85, ../sass/quiz.scss */
+.radioCustomButton,
+.radioCustomLabel {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* line 92, ../sass/quiz.scss */
+.quiz .radioCustomLabel {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 1.5rem 2.5rem 1.5rem 6rem;
+  font-size: 1.35em;
+  line-height: 1.5;
+  color: #646464;
+}
+
+/* line 102, ../sass/quiz.scss */
+.radioCustomButton ~ .radioCustomLabel:before {
+  position: absolute;
+  top: 20px;
+  left: 38px;
+  width: 28px;
+  height: 28px;
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+/* line 117, ../sass/quiz.scss */
+.radioCustomButton:checked ~ .radioCustomLabel:before {
+  content: '';
+  background: #8BC53F url(../svg/icon-check.svg) no-repeat;
+  background-size: 27px;
+  border-color: #8BC53F;
+}
+
+/* Animation */
+/* line 125, ../sass/quiz.scss */
+.quiz .fade-enter {
+  opacity: 0;
+}
+
+/* line 129, ../sass/quiz.scss */
+.quiz .fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out 0.3s;
+}
+
+/* line 134, ../sass/quiz.scss */
+.quiz .fade-leave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 1;
+}
+
+/* line 142, ../sass/quiz.scss */
+.quiz .fade-leave.fade-leave-active {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* line 147, ../sass/quiz.scss */
+.quiz .fade-appear {
+  opacity: 0;
+}
+
+/* line 151, ../sass/quiz.scss */
+.quiz .fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* line 156, ../sass/quiz.scss */
+.App-img {
+  width: 50%;
+  margin: auto;
+}
+
+/* line 161, ../sass/quiz.scss */
+.next-prev-buttons a {
+  margin: 10px;
+}

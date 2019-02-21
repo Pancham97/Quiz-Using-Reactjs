@@ -1,0 +1,63 @@
+.TestTitle {
+    margin: 16px;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: start;
+    font-size: calc(10px + 2vmin);
+    font-weight: bold;
+}
+
+.BlockTitle {
+    margin: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 1vmin);
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgb(229, 229, 229);
+    border: 1px solid rgb(168, 168, 168);
+}
+
+.Title {
+    font-size: calc(10px + 0.8vmin);
+    font-weight: bold;
+}
+
+.EmailTitle {
+    color: darkgrey;
+}
+
+.Text {
+    justify-content: flex-start;
+}
+
+.Legend {
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.LegendText {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.pdfDiv {
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#pdfD {
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#book {
+    display: none;
+    border: 1px solid red;
+    font-size: 16px;
+    color: red;
+}

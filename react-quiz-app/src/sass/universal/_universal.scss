@@ -1,0 +1,43 @@
+.primary-button {
+    background-color: $primary-color;
+    //    background: linear-gradient(to right, $primary-color, #4DB6AC);
+    transition: 0.2s;
+}
+
+.title-text {
+    font-size: 1.125em;
+    text-transform: uppercase;
+    font-weight: 650;
+    line-height: 2.5;
+    letter-spacing: .0625rem;
+    margin: 2.25rem;
+}
+
+footer.page-footer {
+    background-color: #37474F;
+}
+
+.love {
+    font-size: 1em;
+}
+
+.brand-logo img {
+    width: 90px;
+    height: 100%;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.3333;
+}
+
+//.valign-wrapper {
+//    position: absolute;
+//    height: 100%;
+//    width: 100%;
+//}
+
+a {
+    color: $primary-color;
+}

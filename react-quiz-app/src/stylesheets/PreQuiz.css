@@ -1,0 +1,25 @@
+/* line 1, ../sass/PreQuiz.scss */
+html,
+body {
+  min-height: 100%;
+}
+
+/* line 6, ../sass/PreQuiz.scss */
+.gap {
+  margin: 35px;
+}
+
+/* line 10, ../sass/PreQuiz.scss */
+.pre-quiz {
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1540872870401-0aca516f5996?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d14795e9081d0f7ed0ba0f7c97187d3c&auto=format&fit=crop&w=1359&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 19, ../sass/PreQuiz.scss */
+.pre-quiz span {
+  font-weight: 700;
+}

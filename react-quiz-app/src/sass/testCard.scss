@@ -1,0 +1,27 @@
+@import './modules/_variables';
+@import './universal/_universal';
+
+.test-card {
+    margin: 0px;
+}
+
+.test-card .card-panel {
+    border-top: 9px solid #4DB6AC;
+    position: relative;
+    margin: 1em;
+}
+
+.test-card .card-panel:first-child:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, $primary-color, #4DB6AC);
+    top: -10px;
+    left: 0;
+}
+
+.test-card .card-info {
+    background: #ffffff;
+    font-size: 1.2em;
+}

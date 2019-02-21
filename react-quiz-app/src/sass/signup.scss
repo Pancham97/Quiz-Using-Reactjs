@@ -1,0 +1,26 @@
+.signup-class {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    background-image: url('../images/background2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.signup-class .brand-logo {
+    width: 100%;
+}
+
+
+.signup-class .brand-logo>img {
+    width: 100px;
+    height: 100%;
+    opacity: 1;
+}
+
+//signup-class form
+.signup-class .signup-form .row {
+    padding: 0px;
+    margin: 0px;
+    //    margin: 0px;
+}
